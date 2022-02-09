@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 특정속성을 지닌 태그를 선택하는 방법 */
+        input [name="aaa"] {color: red;}
+
+        /* 클래스 이름에 col이 포함된 */
+        li[class*="col"] {color: blue;}
+
+    </style>
+
+</head>
+<body>
+    
+    <input type="checkbox" >
+    <input type="checkbox" >
+    <input type="checkbox" > 
+
+
+    <div>
+        <input type="text" name = "aaa" value="가">
+        <input type="text" name = "aaa" value="나">
+        <input type="text" name = "aaa" value="다">
+    </div>
+
+
+
+    <div>
+        <ul>
+            <li class="col-1">리스트</li>
+            <li class="col-2">리스트</li>
+            <li class="col-3">리스트</li>
+            <li class="col-4">리스트</li>
+        </ul>
+    </div>
+</body>
+</html>
