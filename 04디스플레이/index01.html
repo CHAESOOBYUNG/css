@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .list1 div {display: inline;}
+
+        .list2 span,
+        .list2 strong,
+        .list2 small {
+            display: block; /* 인라인 -> 블럭(줄바꿈이 일어남) */
+        }
+
+        .box input {display: none;} /* 숨긴다 */
+
+        .list3 a {
+           display: inline-block; /* 배치구도는 가로로 하고, 블럭의 성질을 가지게한다 (블럭은 width, height, 문단정렬을 사용할 수 있다) */
+           width: 100px;
+           height: 100px;
+           text-align: center;
+           line-height: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="list1">
+        <div>블럭</div>
+        <div>블럭</div>
+        <div>블럭</div>
+    </div>
+
+    <div class="list2">
+        <span>인라인</span>
+        <strong>인라인</strong>
+        <small>인라인</small>
+    </div>
+
+    <div class="box">
+        <input type="text" name="a">
+    </div>
+
+    <div class="list3">
+        <a href="#">인라인블럭</a>
+        <a href="#">인라인블럭</a>
+        <a href="#">인라인블럭</a>
+    </div>
+
+</body>
+</html>
