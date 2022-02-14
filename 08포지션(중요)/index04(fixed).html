@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {margin: 0; padding: 0; list-style: none;}
+        body {height: 1000px; background-color: aqua;}
+
+        header {position: fixed; left: 0; top: 0; width: 100%; z-index: 20;} /* fixed 예제*/
+        section {margin-top: 150px;} /* 컨텐츠의 시작을 150px이후부터 */
+
+        .logo {text-align: center; background-color: #fff;}
+        .menu {background-color: #000; text-align: center;}
+        .menu ul li {display: inline;}
+        .menu ul li a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px; /* 높이와 자간을 마준다 (수직정렬) */
+            color: #fff;
+            text-decoration: none;
+            padding: 0px 10px;
+        }
+        .menu ul li a:hover {background-color: #999;}
+
+        /* 사이드메뉴 */
+        .side {
+            position: fixed;
+            right: 0;
+            top: 300px;
+            z-index: 10; /* z축의 높이 (포지션 간의 우선순위 결정) */
+            background-color: #282828; /* 배경색 */
+            width: 100px; /* 너비 */
+            text-align: center;
+        }
+        .side .side-list li {border-bottom: 1px solid #777;}
+
+        .side .side-list li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 10px;
+            display: block; /* a가 인라인 태그이기 때문에 */
+            padding: 10px 0;
+            letter-spacing: -1px; /* 자간 */
+        }
+        .side .side-list li a span {
+            display: block;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="img/KakaoTalk_20220210_122356953.png" alt="logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 사이드 메뉴-->
+    <aside class="side">
+        <ul class="side-list">
+            <li>
+                <a href="#">
+                    <span>카톡</span>
+                    <span>aaa123</span>
+                </a>
+            </li>
+            <li><a href="#">전화번호</a></li>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+        </ul>
+    </aside>
+
+    <section>
+
+
+    </section>
+
+
+
+</body>
+</html>

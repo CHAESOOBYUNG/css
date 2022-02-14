@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         * {margin: 0; padding: 0; list-style: none;}
+        body {height: 1000px; background-color: aqua;}
+
+        header {position: fixed; left: 0; top: 0; width: 100%; z-index: 20;} /* fixed 예제*/
+        section {margin-top: 150px;} /* 컨텐츠의 시작을 150px이후부터 */
+
+        .logo {text-align: center; background-color: #fff;}
+        .menu {background-color: #000; text-align: center;}
+        .menu ul li {display: inline;}
+        .menu ul li a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px; /* 높이와 자간을 마준다 (수직정렬) */
+            color: #fff;
+            text-decoration: none;
+            padding: 0px 10px;
+        }
+        .menu ul li a:hover {background-color: #999;}
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="img/KakaoTalk_20220210_122356953.png" alt="logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <style>
+        .inner1 {height: 500px; background-color: bisque;}
+        .inner2 {
+            /*
+            1. sticky 속성을 사용하면 top, bottom, left, right 중 하나를 필수적으로 넣습니다.
+            2. 부모 태그에 overflow 속성이 있으면 안됩니다.
+            3. top 속성에는 스크롤이 이동되었을 때 fixed되는 지점을 기록합니다.
+            */
+            background-color: chocolate;
+            position: sticky;
+            top: 150px;
+            left: 0;
+        }
+        .inner3 {height: 1500px; background-color: chartreuse;}
+    </style>
+
+    <section>
+        <div class="inner1">내용....</div>
+        <div class="inner2">내용....(sticky는 기존에 평상시와 같다가 일정 높이에서 fixed로 변경)</div>
+        <div class="inner3">내용....</div>
+    </section>
+
+</body>
+</html>

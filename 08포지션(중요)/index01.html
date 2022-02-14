@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {margin: 0; padding: 0;}
+        .list {
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid #777;
+        }
+        p {
+            border: 1px solid #777;
+            height: 100px;
+        }
+        .inner1 {background-color: aqua;}
+        .inner2 {
+            background-color: yellow;
+            position: relative; /* relative 내위치에서 z방향으로 올린다. */
+            top: 10px; /* top, bottom 중 1개를 반드시 입력 */
+            left: 10px; /* left, right 중 1개를 반드시 입력 */
+            width: 100px;
+            height: 100px;
+        }
+        .inner3 {background-color: green;}
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="list">
+        <div class="content">
+            <p class="inner1">포지션</p>
+            <p class="inner2">포지션</p>
+            <p class="inner3">포지션</p>
+        </div>
+    </div>
+    
+</body>
+</html>
