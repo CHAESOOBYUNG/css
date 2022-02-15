@@ -68,5 +68,32 @@ html, body {font-family: 'Noto Sans KR', sans-serif;}
     color: #fff;
 }
 
-.tab-content ul li a {display: block;}
+.tab-content ul li a {display: block; position: relative; padding: 10px; border-top: 1px solid #333;}
+.tab-content ul li:nth-child() a {border-top: none;} /* 첫번째 상자만 제외 */
 .tab-content ul li  a span {display: block;}
+
+.tab-content ul li a .thumbs {position: absolute; top: 10px; left: 10px;}
+
+.tab-content ul li a .content {padding-left: 55px;}
+.tab-content ul li a .content > strong,
+.tab-content ul li a .content > p {font-size: 15px;}
+
+.tab-content ul li a .content > strong { /* 넘어가는 컨텐츠 내용에 대해서 생략...처리 */
+    font-size: 15px; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    display: block; 
+    width: 125px; 
+    overflow: hidden;
+}
+
+
+/* footer */
+footer {
+    width: 960px; 
+    margin: 0 auto; 
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box; /* 패딩, 마진을 박스크기에 포함시킴 */
+}

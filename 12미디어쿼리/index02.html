@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            overflow: hidden; /* float의 법칙 */
+            width: 80%; /* 반응형에서는 퍼센트를 사용 */
+            margin: 0 auto; 
+            box-sizing: border-box;
+        }
+        /* 1200이상 */
+        @media(min-width: 1200px) {
+            .inner {float: left; width: 16.6666%;}
+        }
+        /* 768~1199px */
+        @media((min-width: 768px) and (max-width: 1199px) ) {
+            .inner {float: left; width: 25%;}
+        }
+        /* 767px이하 */
+        @media(max-width: 767px) {
+            .inner {float: left; width: 50%;}
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- 미디어 쿼리를 사용하여 그리드 잡기 -->
+    <!-- 전체화면 상자 6, 테블릿 화면에서는 상자 4, 모바일 화면 상자 2개 -->
+    <div class="box">
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+    </div>
+</body>
+</html>
