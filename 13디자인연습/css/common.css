@@ -30,3 +30,14 @@
     .btn {
         border-radius: 0;
     }
+
+    /* 제목 */
+    .title-box {
+        margin: 70px auto;
+        width: 250px;
+        border-top: 1px solid #d1d1d1;
+        border-bottom: 1px solid #d1d1d1;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
