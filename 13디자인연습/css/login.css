@@ -25,3 +25,6 @@
     max-width: 100%;
     height: auto;
 }
+.btn-secondary {
+    background-color: yellow;
+}
