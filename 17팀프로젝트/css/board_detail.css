@@ -1,0 +1,132 @@
+
+.detail-info .title {
+    font-size: 25px; 
+}
+.detail-info .price {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-weight: 30px;
+    padding: 10px 0;
+}
+.detail-info .delivery {
+    font-size: 12px;
+    color: #999;
+}
+
+/* 버튼영역 */
+.detail-control {margin-top: 140px;}
+.detail-control .price {
+    overflow: hidden;
+}
+.detail-control .price .left {
+    font-size: 18px;
+    line-height: 45px;
+    float: left;
+}
+.detail-control .price .right {
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: bold;
+    float: right;
+} 
+.order button {
+    width: 50%;
+    padding: 15px 10px;
+    /* box-sizing: border-box; */
+}
+
+.price > p {
+    height: 35px;
+    line-height: 35px;
+    margin: 0;
+}
+
+.price > strong {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.detail-control .order {
+    overflow: hidden;
+    margin-top: 10px;
+}
+.detail-control .order .left {
+    float: left;
+}
+.detail-control .order .right {
+    float: right;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+/* 댓글영역 */
+.reply-wrap {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+.reply-image {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.reply-content {
+    padding-left: 50px;
+}
+
+.reply-control {
+    overflow: hidden;
+}
+.reply-input {
+    float: left;
+}
+.reply-control > button {
+    float: right;
+}
+
+.reply-content textarea {
+    /* form-control은 부트스트랩 클래스 */
+    resize: vertical; /* 수직이동 */
+    height: 150px;
+    margin-bottom: 5px;
+    transition: all 0.5s ease-in-out 0s;
+}
+.reply-content textarea:focus {
+    height: 250px;
+}
+
+.reply-content input {
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+/* 댓글아래 */
+.reply-wrap .form-control {
+    resize: vertical;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.reply-group {
+    overflow: hidden;
+}
+.reply-group > a {
+    float: right;
+    color: #777;
+}
+.reply-content > p {
+    margin: 0;
+}
+.reply-group .reply-input {
+    float: left;
+}
+.reply .right {
+    float: right;
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+
+

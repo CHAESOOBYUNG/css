@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    *{margin: 0; padding: 0;}
+    .midiaq{
+        display: block;
+        box-sizing: border-box;
+    }
+    .page_title{
+        height: 70px;
+        line-height: 70px;
+        background-color: #263238;
+        color: #fff;
+        font-weight: bold;
+        font-size: 24px;
+        text-indent: 20px;
+    }
+    form {
+        padding: 0px;
+        margin: 0px;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 14px;
+        color: #555555;
+        font-weight: normal;
+        letter-spacing: -1px;
+        word-spacing: -1px;
+    }
+    .search_block_flfull {
+        background-color: #fff;
+        border: 1px solid #ededed;
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    .search_block_flfull::after {
+        clear: both;
+        display: block;
+        content: '';
+    }
+
+    .fl {
+        float: left;
+        width: 100%;
+        padding: 15px;
+        padding-bottom: 0px;
+    }
+    .fr{
+        float: right;
+        padding: 15px;
+        padding-bottom: 0px;
+    }
+    ul{
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+    li {
+        list-style: none;
+        display: list-item;
+        /* text-align: -webkit-match-parent; */
+    }
+    .collum_tit {
+        margin-top: 10px;
+        background-color: #263238;
+        position: relative;
+        line-height: 55px;
+        border: 1px solid #ededed;
+        min-width: 950px;
+        overflow: hidden;
+    }
+    .collum_tit > h2 {
+        display: inline-block;
+        color: #fff;
+        font-size: 18px;
+        line-height: 55px;
+        margin-left: 20px;
+
+    }
+    .collum_tit > select {
+
+        border-radius: 2px;
+        background-color: #585858;
+        color: #fff;
+        height: 26px;
+        margin-top: 15px;
+        line-height: 26px;
+        font-size: 12px;
+        position: absolute;
+        top: 0px;
+        right: 50px;
+        border: 1px solid #d5d5d5;
+        margin-right: 4px;
+
+    }
+    input[type=text], select {
+        min-width: 60px;
+    }
+    .showtoggle {
+        position: absolute;
+        top: 18px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .minus {
+        background-image: url(img/minus.png);
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        
+    }
+
+
+
+    .full_collum > ul > li > ul {
+        display: block;
+        background-color: #fff;
+
+    }
+
+
+</style>
+
+<body>
+    <div class="midiaq">
+    <div class="page_title">검색</div>
+    <form name="ReviewList" action="ReviewList" method="get">
+        <div class="search_block_flfull">
+            <div class="fl">
+                <div>
+                    <span class="search_th">제목 검색</span>
+                    <input type="text" class placeholder="제목 검색">
+                </div>
+                <div class="search_id">
+                    <span class="search_id">아이디 검색</span>
+                    <input type="text" class placeholder="아이디 검색">
+                </div>
+            </div>
+            <div class="fr">
+                <div class="search_btn_area">
+                    <a href="#" class="normal_btn" id="searchBtn">검색</a>
+                    <a href="#" class="normal_btn">등록</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="full_collum_collum">
+            <ul>
+                <li class="collum_tit">
+                    <h2>리뷰 목록</h2>
+                    <select class>
+                        <option value="10">10개 보기</option>
+                        <option value="20">20개 보기</option>
+                        <option value="30">30개 보기</option>
+                        <option value="40">40개 보기</option>
+                    </select>
+                    <span class="showtoggle minus"></span>
+                    <ul>
+                        <li>
+                            <table callpadding="0" cellspacing="0" class="row_tb_7" width="100%">
+                                <tbody>
+                                    <tr>
+                                        <th>순서</th>
+                                        <th>아이디</th>
+                                        <th>제목</th>
+                                        <th>내용</th>
+                                        <th>등록일</th>
+                                    </tr>
+                                    <tr>
+                                        <td>순서</td>
+                                        <td>아이디</td>
+                                        <td>제목</td>
+                                        <td>
+                                            <a title="상세보기(클릭)" href="리뷰리스트주소">내용</a>
+                                        </td>
+                                        <td>등록일</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="page">
+                                <ul>
+                                    <li>
+                                        <a href="/주소?page=1&amount=10&searchName=&searchContent=&searchPrice=&startDate=&endDate="></a>
+                                    </li>
+                                    <li class="on">
+                                        <a href="/주소?page=1&amount=10&searchName=&searchContent=&searchPrice=&startDate=&endDate="></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </form>
+    </div>
+</body>
+</html>

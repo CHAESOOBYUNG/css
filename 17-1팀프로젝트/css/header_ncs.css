@@ -1,0 +1,84 @@
+.header_col1 {
+    background-color: #EEEEEE;
+    height: 43px;
+}
+.header_col1 .top_col {
+    width: 1240px;
+    margin: 0 auto;
+}
+.top_width {
+    overflow: hidden; /* 플롯법칙 */
+    text-align: center;
+}
+.fl_left {float: left;}
+.fl_right {float: right;}
+
+.site_menu li {display: inline;}
+.site_menu li a {
+    display: inline-block;
+    color: #666666;
+    text-decoration: none;
+    height: 42px;
+    line-height: 42px;
+    width: 140px;
+    font-size: 14px;
+}
+/* li태그에 .on클래스가 있는 a태그*/
+.site_menu li.on a {
+    border-top: 1px solid #d2d0d0;
+    border-left: 1px solid #d2d0d0;
+    border-right: 1px solid #d2d0d0;
+    border-bottom: 5px solid #037fc3;
+    background-color: #fff;
+
+}
+
+.site_menu_right a {
+    color: #666666;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 3px 8px;
+    display: inline-block;
+    margin-top: 5px;
+    border: 1px solid #999;
+}
+
+/* 아래쪽헤더 */
+.header_col2 {
+    height: 82px;
+}
+
+.header_col2 .top_col {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.header_col2 .logo {
+    float: left;
+    display: block;
+    width: 180px;
+    height: 62px;
+    background-image: url('../img/logo_blind.png'); /* css파일위치에서 경로참조 */
+    background-repeat: no-repeat;
+    margin-top: 26px;
+}
+
+.header_col2 .top_menu {
+    float: left;
+}
+
+.top_menu ul li {display: inline;}
+.top_menu ul li a {
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+    color: #333333;
+    text-decoration: none;
+    padding: 0 8px;
+    margin: 0 3px;
+    font-size: 18px;
+}
+
+.top_hide {
+    display: none;
+}
