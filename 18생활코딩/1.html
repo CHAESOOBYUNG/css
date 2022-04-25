@@ -1,13 +1,13 @@
 <!DOCTYPE html> <!-- <!DOCTYPE> (document type의 약자): 웹문서가 어떤 버전의 html 언어로 작성되었는지 결정하는 기능 -->
 <html lang="en"> <!-- <html>: html 웹문서를 작성하기 위한 관용적인 태그-->
-<head><!-- 본문(body)를 설명하는 태그 -->
+<head><!-- <head>: 본문(body)를 설명하는 태그 -->
     <meta charset="UTF-8"> <!-- <meta charset=""> (character set의 약자): 문자규칙이라는 의미로 어떤 문자로 문서를 읽을 건지 규칙을 정함 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB1 - HTML</title> <!-- 본문의 제목이 무엇인지 설명하는 태그 -->
+    <title>WEB1 - HTML</title> <!-- <title>: 본문의 제목이 무엇인지 설명하는 태그 -->
 </head>
 
-<body> <!-- body: 본문을 나타내는 태그 -->
+<body> <!-- <body>: 본문을 나타내는 태그 -->
     <h1>WEB</h1>
     <ul>
         <li><a href="1.html">1. HTML</a></li>
@@ -26,7 +26,7 @@
 
     <h2>HTML</h2>
     Hello World.
-    <p><a href="https://www.w3.org/TR/html5">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong>  and web application.
+    <p><a href="https://www.w3.org/TR/html5" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong>  and web application.
     Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. 
     HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
     <img src="img/stopwar.jpg" width="100%">
@@ -34,19 +34,24 @@
     <p style="margin-top: 45px;"> HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, 
     may be embedded into the rendered page. <br><br><br> It provides a means to create structured documents by denoting structural semantics for text 
     such as headings, paragrapghs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.</p>
-    <!-- strong: 글시체를 굵게하는 태그 / u (u는 underline의 약자): 밑줄을 긋는 태그 -->
-    <!-- br (br은 break의 약자): 줄바꿈 태그(html new line tag) -> 열린 태그, 닫힌 태그 존재 X -->
-    <!-- p (p는 paragraph의 약자): 하나의 문단을 만들고 싶을 때 사용하는 태그 -> 열린태그, 닫힌 태그 존재 + 열린태그 문단 첫번째, 닫힌 태그 문단 마지막 -->
-    <!-- a (a는 anchor의 약자): 닻을 내리듯이 하이퍼링크를 걸어주는 태그 
-         -> href(hyperlink reference의 약자): 하이퍼링크를 참조하는  -->
-    <!-- img (img는 image의 약자): 이미지를 넣고 싶을 때 쓰는 태그 -->
+    <!-- <strong>: 글시체를 굵게하는 태그 / <u> (u는 underline의 약자): 밑줄을 긋는 태그 -->
+    <!-- <br> (br은 break의 약자): 줄바꿈 태그(html new line tag) -> 열린 태그, 닫힌 태그 존재 X -->
+    <!-- <p> (p는 paragraph의 약자): 하나의 문단을 만들고 싶을 때 사용하는 태그 -> 열린태그, 닫힌 태그 존재 + 열린태그 문단 첫번째, 닫힌 태그 문단 마지막 -->
+    <!-- <a> (a는 anchor의 약자): 닻을 내리듯이 하이퍼링크를 걸어주는 태그 
+         -> href(hyperlink reference의 약자): 하이퍼링크를 참조하는 태그 
+         -> target: 링크된 문서를 클릭했을 때 문서가 열릴 위치를 명시하는 태그 
+            -> _blank: 링크된 문서를 새로운 윈도우나 탭(tab)에서 오픈하는 태그
+            -> _self: 링크된 문서를 링크가 위치한 현재 프레임에서 오픈하는 태그(기본값으로 생략 가능.) 
+            -> _parent: 링크된 문서를 현재 프레임의 부모 프레임에서 오픈하는 태그
+            -> _top: 링크된 문서를 현재 윈도우 전체에서 오픈하는 태그 
+            -> 프레임 이름: 링크된 문서를 명시된 프레임에서 오픈하는 태그 -->
+    <!-- <img> (img는 image의 약자): 이미지를 넣고 싶을 때 쓰는 태그 -->
     <!-- width: 엘리먼트의 너비를 제어하기 위해 사용하는 태그 
          -> 절대값은 px(픽셀: 디지털 화상을 구성하는 기본적인 단위)로 표현
          -> 상대값은 %로 표현 -->
-    <!-- src (src는 source의 약자): 삽입할 이미지를 ("img/...") -->
+    <!-- src (src는 source의 약자): 삽입할 이미지 링크를 ("img/...") 표현하는 태그 -->
     <!-- style (HTML속성): html태그를 꾸며주기 위한 속성 -->
     <!-- margin-top (css속성): margin 부분의 상단여백을 지정할 때 사용 (img > css속성.jpg 참조) -->
-    
 
     <h1>W3C</h1>
 
@@ -56,16 +61,42 @@
     <h4>This is heading 4</h4>
     <h5>This is heading 5</h5>
     <h6>This is heading 6</h6>
-    <!-- h1 ~ h6 (h는 heading의 약자): 제목을 나타내는 태그를 의미 -->
+    <!-- <h1> ~ <h6> (h는 heading의 약자): 제목을 나타내는 태그를 의미 -->
 
     <span style="font: size 24px;">coding</span>
     <h3>coding</h3>
-    <!-- div (division의 약자): 레이아웃을 나누는데 사용하는 태그를 의미. display 속성이 block이며 
+    <!-- <div> (division의 약자): 레이아웃을 나누는데 사용하는 태그를 의미. display 속성이 block이며 
     줄바꿈이 가능함. -->
-    <!-- span: 특별한 기능 X, CSS와 같이 쓰임. div태그와 비슷한 속성을 지님. But, display 속성이 inline이며 
+    <!-- <span>: 특별한 기능 X, CSS와 같이 쓰임. div태그와 비슷한 속성을 지님. But, display 속성이 inline이며 
     줄바꿈이 되지 않음. -->
-    <!-- font: 글자 크기를 정하는 속성-->
+    <!-- <font>: 글자 크기를 정하는 속성 -->
 
+    <table border="1">
+        <tr>
+            <td>head</td>
+            <td>98.1%</td>
+        </tr>
+        <tr>
+            <td>body</td>
+            <td>97.9%</td>
+        </tr>
+        <tr>
+            <td>head</td>
+            <td>97.9%</td>
+        </tr>
+    </table>
+
+    <!-- table: 테이블을 만드는 태그
+         th: 테이블의 헤더부분을 만드는 태그
+         tr: 테이블의 행을 만드는 태그
+         td: 테이블의 열을 만드는 태그 
+         border: 테이블의 테두리
+         bordercolor: 테이블의 테두리 색상 
+         width: 테이블 가로 크기 
+         height: 테이블 세로 크기 
+         align: 정렬
+         bgcolor: 배경색 
+         rowspan : 행(세로) 병합 (세로줄을 합치는 개수를 지정) / colspan : 열(가로) 병합 (column span의 약자, 가로줄을 합치는 개수를 지정)-->
     
 </body>
 </html>
