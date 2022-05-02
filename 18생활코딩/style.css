@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+a {
+    color: black; /* 글자색을 검은색으로 함 */
+    /* text-decoration: none; */ /* 글자 밑줄을 없앰*/
+}
+/* .saw { 
+    color: gray;
+} */ 
+/* 클래스 선택자: .을 앞에 붙임 - saw class 전체에 적용 */
+/*
+#active { 
+    color: red; 
+} */
+/* id 선택자: #을 앞에 붙임 - active id 전체에 적용 */
+/* id 선택자 > 클래스 선택자 > 태그 선택자(id 선택자가 클래스 선택자보다 우선함, 태그 선택자가 가장 약함) */
+/* 이유: id 선택자는 고유하고 구체적이지만 태그 선택자로 갈수록 포괄적임 */
+h1 {
+    font-size: 45px;
+    text-align: center; /* 가운데 정렬 */
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 20px;
+}
+#grid ul {
+    border-right: 1px solid gray;
+    width: 100px;
+    margin: 0;
+    padding: 33px;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#grid2 ul {
+    border-right: 1px solid gray;
+    width: 100px;
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+}
+#grid2 {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#article {
+    padding: 25px;
+}
+#photo {
+    float: left;
+}
+
+/* screen-width < 800px */
+@media(max-width: 800px) {
+    #grid {
+    display: block;
+    }
+    #grid ul {
+    border-right: none;
+    }
+    h1 {
+        border-bottom: none;
+    }
+    
+    #grid2 {
+        display: block;
+        }
+    #grid2 ul {
+        border-right: none;
+        }
+}

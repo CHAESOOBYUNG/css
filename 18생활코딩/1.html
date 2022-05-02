@@ -5,35 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB1 - HTML</title> <!-- <title>: 본문의 제목이 무엇인지 설명하는 태그 -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body> <!-- <body>: 본문을 나타내는 태그 -->
-    <h1>WEB</h1>
-    <ul>
-        <li><a href="1.html">1. HTML</a></li>
-        <li><a href="2.html">2. CSS</a></li>
-        <li><a href="3.html">3. JavaScript</a></li>
-    </ul>
-    <ol>
-        <li>Liz</li>
-        <li>Wonyoung</li>
-        <li>Yujin</li>
-    </ol>
-    <!-- <li>(list의 약자): 리스트(li)에 포함된 아이템을 정의할 때 사용 -->
-    <!-- <ul>(unorderd list의 약자): 요소나 순서가 없는 리스트를 정의할 때 사용 -> 검정색 작은 원으로 리스트를 표현 -->
-    <!-- <ol>(ordered list의 약자): 요소나 순서가 있는 리스트를 정의할 때 사용 -> 자동으로 아이템의 순서에 따라 번호가 매겨짐 -->
-    <!-- <li>태그는 반드시 부모태그를 가지고 있으며 <ul>, <ol> 태그는 반드시 자식태그를 가지고 있다. -->
+    <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
+        <ul>
+            <li><a href="1.html" class="saw">1. HTML</a></li> <!-- saw class로 그룹핑-->
+            <li><a href="2.html" class="saw" id="active">2. CSS</a></li> <!-- saw class로 그룹핑-->
+            <!-- <li><a href="2.html" style="color: red; text-decoration: underline;" >2. CSS</a></li> -->
+            <li><a href="3.html">3. JavaScript</a></li>
+        </ul>
+        <!-- <h1><a href="index.html"><font color="red">WEB</font></a></h1>
+        <ul>
+            <li><a href="1.html"><font color="red">1. HTML</font></a></li>
+            <li><a href="2.html"><font color="red">2. CSS</font></a></li>
+            <li><a href="3.html"><font color="red">3. JavaScript</font></a></li>
+        </ul> -->
 
-    <h2>HTML</h2>
-    Hello World.
-    <p><a href="https://www.w3.org/TR/html5" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong>  and web application.
-    Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. 
-    HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+        <!--
+        <ol>
+            <li>Liz</li>
+            <li>Wonyoung</li>
+            <li>Yujin</li>
+        </ol>
+        -->
+
+        <!-- <li>(list의 약자): 리스트(li)에 포함된 아이템을 정의할 때 사용 -->
+        <!-- <ul>(unorderd list의 약자): 요소나 순서가 없는 리스트를 정의할 때 사용 -> 검정색 작은 원으로 리스트를 표현 -->
+        <!-- <ol>(ordered list의 약자): 요소나 순서가 있는 리스트를 정의할 때 사용 -> 자동으로 아이템의 순서에 따라 번호가 매겨짐 -->
+        <!-- <li>태그는 반드시 부모태그를 가지고 있으며 <ul>, <ol> 태그는 반드시 자식태그를 가지고 있다. -->
+
+        <div id="article">
+            <h2>HTML</h2>
+            Hello World.
+            <p><a href="https://www.w3.org/TR/html5" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong>  and web application.
+            Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. 
+            HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+            </p>
+            <p style="margin-top: 45px;"> HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, 
+            may be embedded into the rendered page. <br><br><br> It provides a means to create structured documents by denoting structural semantics for text 
+            such as headings, paragrapghs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.</p>
+        </div>
+    </div>
+
     <img src="img/stopwar.jpg" width="100%">
-    </p>
-    <p style="margin-top: 45px;"> HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, 
-    may be embedded into the rendered page. <br><br><br> It provides a means to create structured documents by denoting structural semantics for text 
-    such as headings, paragrapghs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.</p>
+
+    <!-- 동영상 삽입 -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WodXWTy4CL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
     <!-- <strong>: 글시체를 굵게하는 태그 / <u> (u는 underline의 약자): 밑줄을 긋는 태그 -->
     <!-- <br> (br은 break의 약자): 줄바꿈 태그(html new line tag) -> 열린 태그, 닫힌 태그 존재 X -->
     <!-- <p> (p는 paragraph의 약자): 하나의 문단을 만들고 싶을 때 사용하는 태그 -> 열린태그, 닫힌 태그 존재 + 열린태그 문단 첫번째, 닫힌 태그 문단 마지막 -->
@@ -96,7 +117,7 @@
          height: 테이블 세로 크기 
          align: 정렬
          bgcolor: 배경색 
-         rowspan : 행(세로) 병합 (세로줄을 합치는 개수를 지정) / colspan : 열(가로) 병합 (column span의 약자, 가로줄을 합치는 개수를 지정)-->
+         rowspan : 행(세로) 병합 (세로줄을 합치는 개수를 지정) / colspan : 열(가로) 병합 (column span의 약자, 가로줄을 합치는 개수를 지정) -->
     
 </body>
 </html>

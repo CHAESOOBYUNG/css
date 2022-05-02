@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid {
+             border: 5px solid pink; /* solid: 태두리를 실선으로 설정함 */
+             display: grid;
+             grid-template-columns: 150px 1fr;
+        }
+        div {
+            border: 5px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div>NAVIGATION</div> <!-- div 태그: 아무런 의미를 가지지 않고 디자인을 위해 존재함. -->
+        <div>ARTICLE</div> <!-- span 태그: 아무런 의미를 가지지 않고 디자인을 위해 존재하는 inline 태그 -->
+    </div>
+</body>
+</html>
