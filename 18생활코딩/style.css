@@ -2,8 +2,8 @@ body {
     margin: 0;
 }
 a {
-    color: black; /* 글자색을 검은색으로 함 */
-    /* text-decoration: none; */ /* 글자 밑줄을 없앰*/
+    color: black;  /* 글자색을 검은색으로 함 */
+    text-decoration: none; /* 글자 밑줄을 없앰*/
 }
 /* .saw { 
     color: gray;
@@ -28,21 +28,24 @@ h1 {
     width: 100px;
     margin: 0;
     padding: 33px;
+    list-style: none;
 }
 #grid {
     display: grid;
     grid-template-columns: 150px 1fr;
+    list-style: none;   
 }
 #grid2 ul {
     border-right: 1px solid gray;
     width: 100px;
     margin: 0;
     padding: 20px;
-    list-style: none;
+    list-style: none;   
 }
 #grid2 {
     display: grid;
     grid-template-columns: 150px 1fr;
+    list-style: none;    
 }
 #article {
     padding: 25px;
@@ -58,6 +61,7 @@ h1 {
     }
     #grid ul {
     border-right: none;
+    list-style: none;
     }
     h1 {
         border-bottom: none;

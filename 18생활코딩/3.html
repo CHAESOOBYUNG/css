@@ -10,20 +10,140 @@
 
 <body> <!-- body: 본문을 나타내는 태그 -->
     <h1><a href="index.html">WEB</a></h1>
-    <div id="grid">
-        <ul>
-            <li><a href="1.html">1. HTML</a></li>
-            <li><a href="2.html">2. CSS</a></li>
-            <li><a href="3.html">3. JavaScript</a></li>
-        </ul>
-        <div id="article">
-            <h2>JavaScript</h2>
-            <p>
-                JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.
-                Over 97% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries. 
-                All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
-            </p>
+        <!--
+        <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black'; 
+        document.querySelector('body').style.color = 'white'; 
+        ">
+
+        <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white'; 
+        document.querySelector('body').style.color = 'black'; 
+        ">
+        -->
+
+        <!--
+        <input id="night_day" type="button" value="night" onclick="
+            if (document.querySelector('#night_day').value === 'night') {
+                document.querySelector('body').style.backgroundColor = 'black'; 
+                document.querySelector('body').style.color = 'white';
+                document.querySelector('#night_day').value = 'day';
+            }
+            else {
+                document.querySelector('body').style.backgroundColor = 'white'; 
+                document.querySelector('body').style.color = 'black';
+                document.querySelector('#night_day').value = 'night';     
+            }
+        ">
+        -->
+
+        <!-- night button 1 (while문)-->
+        <input type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if (this.value === 'night') {
+            target.style.backgroundColor = 'black'; 
+            target.style.color = 'white';
+            this.value = 'day';
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length) {
+                console.log(alist[i]);
+                alist[i].style.color = 'powderblue';
+                i += 1;
+            }
+        }
+        else {
+            target.style.backgroundColor = 'white'; 
+            target.style.color = 'black';
+            this.value = 'night';  
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;   
+            while(i < alist.length) {
+                console.log(alist[i]);
+                alist[i].style.color = 'blue';
+                i += 1;
+            }
+        }
+        ">
+
+        <div id="grid">
+            <ul>
+                <li><a href="1.html">1. HTML</a></li>
+                <li><a href="2.html">2. CSS</a></li>
+                <li><a href="3.html">3. JavaScript</a></li>
+            </ul>
+        
+            <div id="article">
+                <h2>JavaScript</h2>
+                <p>
+                    JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.
+                    Over 97% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries. 
+                    All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
+                </p>
+            </div>
         </div>
-    </div>
-</body>
+
+        <!-- night button 2 (for문) -->
+        <input type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if (this.value === 'night') {
+            target.style.backgroundColor = 'black'; 
+            target.style.color = 'white';
+            this.value = 'day';
+
+            var alist = document.querySelectorAll('a');
+            
+            for(var i = 0; i < alist.length; i++) {
+                console.log(alist[i]);
+                alist[i].style.color = 'powderblue';
+            }
+        }
+        else {
+            target.style.backgroundColor = 'white'; 
+            target.style.color = 'black';
+            this.value = 'night';     
+
+            var alist = document.querySelectorAll('a');
+            for(var i = 0; i < alist.length; i++) {
+                console.log(alist[i]);
+                alist[i].style.color = 'blue';
+            }
+        }
+        ">
+
+        <!-- night button 3 (do ~ while 문)-->
+        <input type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if (this.value === 'night') {
+            target.style.backgroundColor = 'black'; 
+            target.style.color = 'white';
+            this.value = 'day';
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            do {
+                console.log(alist[i]);
+                alist[i].style.color = 'powderblue';
+                i+=1;
+            } while(i < alist.length)
+        }
+        else {
+            target.style.backgroundColor = 'white'; 
+            target.style.color = 'black';
+            this.value = 'night';     
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            do {
+                console.log(alist[i]);
+                alist[i].style.color = 'blue';
+                i+=1;
+            } while(i < alist.length)
+            
+        }
+        ">
+        
+    </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loop & Array (반복문과 배열)</h1>
+    <script>
+        var ive = ['리즈(IVE)', '장원영', '안유진', '이서', '레이(IVE)', '가을(IVE)'];
+    </script>
+    <h2>IVE</h2>
+    <ul>
+        <!--
+        <li>리즈(IVE)</li>
+        <li>Wonyoung</li>
+        <li>Yujin</li>
+        <li>Leeseo</li>
+        <li>Rei</li>
+        <li>Gaeul</li>
+        -->
+        <script>
+            var i = 0;
+            while(i < ive.length) {
+            document.write('<li><a href="http://namu.wiki/w/ '+ ive[i]+' ">' + ive[i] + '</a></li>');
+            i += 1;
+            }
+        </script>
+    </ul>
+</body>
+</html>
