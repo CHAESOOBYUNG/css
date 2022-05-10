@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB - JavaScript</title> <!-- 본문의 제목이 무엇인지 설명하는 태그 -->
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="colors.js"></script>
 </head>
 
 <body> <!-- body: 본문을 나타내는 태그 -->
@@ -39,6 +41,9 @@
 
         <!-- night button 1 (while문)-->
         <input type="button" value="night" onclick="
+        nightDayHandler(this);
+        ">
+        <!-- <input type="button" value="night" onclick="
         var target = document.querySelector('body');
         if (this.value === 'night') {
             target.style.backgroundColor = 'black'; 
@@ -66,7 +71,7 @@
                 i += 1;
             }
         }
-        ">
+        "> -->
 
         <div id="grid">
             <ul>
@@ -87,6 +92,9 @@
 
         <!-- night button 2 (for문) -->
         <input type="button" value="night" onclick="
+            nightDayHandler(this);
+        ">
+        <!-- <input type="button" value="night" onclick="
         var target = document.querySelector('body');
         if (this.value === 'night') {
             target.style.backgroundColor = 'black'; 
@@ -111,10 +119,14 @@
                 alist[i].style.color = 'blue';
             }
         }
-        ">
+        "> -->
+        
 
         <!-- night button 3 (do ~ while 문)-->
         <input type="button" value="night" onclick="
+            nightDayHandler(this);
+        ">
+        <!-- <input type="button" value="night" onclick="
         var target = document.querySelector('body');
         if (this.value === 'night') {
             target.style.backgroundColor = 'black'; 
@@ -141,9 +153,8 @@
                 alist[i].style.color = 'blue';
                 i+=1;
             } while(i < alist.length)
-            
         }
-        ">
+        "> -->
         
     </body>
 </html>

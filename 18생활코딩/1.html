@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB1 - HTML</title> <!-- <title>: 본문의 제목이 무엇인지 설명하는 태그 -->
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="colors.js"></script>
 </head>
 
 <body> <!-- <body>: 본문을 나타내는 태그 -->
     <h1><a href="index.html">WEB</a></h1>
+    <input type="button" value="night" onclick="
+            nightDayHandler(this);
+        ">
     <div id="grid">
         <ul>
             <li><a href="1.html" class="saw">1. HTML</a></li> <!-- saw class로 그룹핑-->

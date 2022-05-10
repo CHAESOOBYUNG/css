@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+        var ive = {
+            "leader": "Yujin",
+            "vocal" : "Liz"
+        };
+        document.write("leader : " + ive.leader + "<br>");
+        document.write("vocal : " + ive.vocal + "<br>"); 
+        ive.rapper = "Rei";
+        document.write("rapper : " + ive.rapper + "<br>");
+        ive["the tallest"] = "Wonyoung";
+        document.write("the tallest : " + ive["the tallest"] + "<br>");
+    </script>
+    <h2>Iterate</h2>
+    <script>
+        for(var key in ive) {
+            document.write(key+' : '+ive[key]+'<br>');
+            }
+    </script>
+    <h2>Property & Method</h2>
+    <script>
+        ive.showAll = function() {
+            for(var key in ive) {
+            document.write(key+' : '+ive[key]+'<br>');
+            }
+        }
+        ive.showAll();
+        
+        // var showAll = function() {
+
+        // }
+
+        // function showAll() {
+
+        // }
+    </script>
+</body>
+</html>
