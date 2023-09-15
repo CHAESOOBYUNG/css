@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="username">이름</label></td>
+                    <td><input type="text" name="username" id="username"></td>
+                </tr>
+                <tr>
+                    <td>성별</td>
+                    <td>
+                        <input type="radio" name="gender" id="man" value="m"> <!-- radio 버튼은 name 속성을 같게 입력해야 여러 항목 중 하나만 선택됨 -->
+                        <label for="man">남자</label>
+                        <input type="radio" name="gender" id="woman" value="w">
+                        <label for="woman">여자</label>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="가입">
+        </form>
+    </body>
+</html>
