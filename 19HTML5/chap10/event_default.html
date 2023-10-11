@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traditional Event - Default Event</title>
+    <script>
+        // 이벤트 연결
+        window.onload = function () {
+            // 문서 객체 선택
+            var button = document.getElementById('button');
+
+            // 이벤트 연결
+            button.onclick = function (event) {
+                // 하이퍼 링크 기본 동작 방지
+                event.preventDefault();
+
+                // IP 주소로 리디렉션
+                window.location.href = 'http://www.naver.com';
+
+                // 기본 이벤트 제거
+                //return false;
+            };
+        };
+    </script>
+</head>
+<body>
+    <a id="button" href="http://www.naver.com">버튼</a>
+</body>
+</html>
