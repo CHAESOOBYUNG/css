@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <div>버튼</div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        // 이벤트 연결
+        $('div').hover(function () {
+
+            // 색상 변경
+            $(this).css({opacity: 0.5});
+
+        }, function () {
+            // 색상 변경
+            $(this).css({opacity: 1});
+        });
+    </script>
+    <style>
+        div {
+            width: 100px;
+            height: 50px;
+            line-height: 50px; /* 글자 수직 중앙 정렬 */
+            text-align: center; /* 글자 수평 중앙 정렬 */
+            color: white;
+            background-color: teal;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
